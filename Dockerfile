@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Command to run on container start
-CMD ["python", "./embed.py", "process_documents"]
+CMD ["fastapi", "run", "--port", "8000", "api.py"]

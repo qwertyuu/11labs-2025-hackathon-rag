@@ -9,6 +9,7 @@ services:
       - milvus
     environment:
       MILVUS_URI: "http://milvus:19530"
+      PYTHONUNBUFFERED: 1
 
   etcd:
     container_name: milvus-etcd2
