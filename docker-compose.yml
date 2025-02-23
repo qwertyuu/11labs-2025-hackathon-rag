@@ -10,8 +10,6 @@ services:
     environment:
       MILVUS_URI: "http://milvus:19530"
       PYTHONUNBUFFERED: 1
-    volumes:
-      - ${DOCKER_VOLUME_DIRECTORY:-.}/.cache/pip-docker/:/root/.cache/pip
 
   etcd:
     container_name: milvus-etcd2
